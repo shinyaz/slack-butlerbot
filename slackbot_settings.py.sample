@@ -1,0 +1,15 @@
+# Settings for slackbot
+
+# API Token for Bot integration
+API_TOKEN = "<your-api-token>"
+
+DEFAULT_REPLY = "残念ながら、理解できませんでした :sweat_drops:"
+
+ERRORS_TO = '<some-channel or username>'
+
+PLUGINS = [
+    'slackbot.plugins',
+    'butlerbot.plugins',
+]
+
+ALIASES = '$'
