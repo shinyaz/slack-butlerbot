@@ -8,7 +8,7 @@ from ..botmessage import botreply
 @listen_to('おはよう|お早う')
 def morning(message):
     replies = (
-        'おはようございます！ :smily:',
+        'おはようございます！ :smiley:',
         '気持ちのいい朝ですね！ :sunny:',
         'Good morning!',
     )
@@ -18,8 +18,8 @@ def morning(message):
 @listen_to('こんにち[はわ]')
 def noon(message):
     replies = (
-        'こんにちは！ :smily:',
-        'こんにちは、調子はどうかな :smily:',
+        'こんにちは！ :smiley:',
+        'こんにちは、調子はどうかな :smiley:',
         'Hi!',
     )
     botreply(message, choice(replies))
@@ -48,7 +48,7 @@ def night(message):
 def goback(message):
     replies = (
         'お疲れさま、お気をつけて :wave:',
-        'お帰りをお待ちしてます :smily:',
+        'お帰りをお待ちしてます :smiley:',
         'Watch your step going home!',
     )
     botreply(message, choice(replies))
@@ -57,7 +57,7 @@ def goback(message):
 def thanks(message):
     replies = (
         'どういたしまして！',
-        'お役に立てたのなら何よりです :smily:',
+        'お役に立てたのなら何よりです :smiley:',
         'It\'s my pleasure!',
     )
     botreply(message, choice(replies))
