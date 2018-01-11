@@ -1,4 +1,4 @@
-#coding: UTF-8
+# coding: UTF-8
 from random import choice
 from slackbot.bot import respond_to
 from slackbot.bot import listen_to
@@ -44,6 +44,7 @@ def night(message):
     )
     botreply(message, choice(replies))
 
+
 @listen_to('帰る[よね]|帰りま|帰ってる')
 def goback(message):
     replies = (
@@ -52,6 +53,7 @@ def goback(message):
         'Watch your step going home!',
     )
     botreply(message, choice(replies))
+
 
 @respond_to('ありがと|さんきゅ|サンキュ|どうも')
 def thanks(message):
